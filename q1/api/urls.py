@@ -6,7 +6,7 @@ from q1.api.views import NavigationRecordListAPIView, VehicleListAPIView, Vehicl
 urlpatterns = [
     path('VehicleList', VehicleListAPIView.as_view(), name="VehicleList"),
     path('NavigationRecordList', NavigationRecordListAPIView.as_view(), name="NavigationRecordList"),
-    path('navigation-record/<pk>', NavigationRecordAPIView.as_view(), name="detail"),
+    path('NavigationRecord/<pk>', NavigationRecordAPIView.as_view(), name="detail"),
     path('vehicle/<pk>', VehicleAPIView.as_view(), name="detail"),
     path('create/vehicle', addVehicle.as_view(), name="create"),
     path('create/record', addRecord.as_view(), name="create")
