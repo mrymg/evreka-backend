@@ -56,7 +56,7 @@ In question 2, we can solve the problem that we can add operation id as a foreig
 
 Here is the ER Diagram: 
 
-![ER Diagram]('https://github.com/mrymg/evreka-backend/blob/master/q2.png')
+![ER Diagram](https://github.com/mrymg/evreka-backend/blob/master/q2.png)
 
 **!!** I did not quite understand from which angle I should approach it as a function. So I just put the DJANGO ORM model code below in pseudo form.
 
