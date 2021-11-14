@@ -50,9 +50,20 @@ Example of POST request for Vehicle:
 
     
     
-
 ## Question 2 
 
+In question 2, we can solve the problem that we can add operation id as a foreign key into Bin Model Class.
 
-![s](#)
+Here is the ER Diagram: 
+
+![ER Diagram]('q2.png')
+
+**!!** I did not quite understand from which angle I should approach it as a function. So I just put the DJANGO ORM model code below in pseudo form.
+
+    class Bin(models.Model):  
+        Last_Operation = models.ForeignKey(Operation, related_name='Operation')  
+        Latitude = models.FloatField(default=0)  
+        Longtitude = models.FloatField(default=0)  
+        Last_Collection = models.DateTimeField(default=datetime.now())
+        Collection_Frequency = models.IntegerField()
 
